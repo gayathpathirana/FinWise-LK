@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B1220"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Salary &amp; Tax Calculator"
+            android:textColor="#F4C542"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sri Lanka | Tax Year 2026/2027"
+            android:textColor="#AAB4C5"
+            android:textSize="14sp"
+            android:layout_marginBottom="22dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Monthly Gross Salary (LKR)"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etGrossSalary"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:backgroundTint="#F4C542"
+            android:hint="Example: 250000"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAB4C5" />
+
+        <Button
+            android:id="@+id/btnCalculateSalary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F4C542"
+            android:text="Calculate Salary"
+            android:textColor="#0B1220"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#18263B"
+            android:padding="18dp"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SALARY BREAKDOWN"
+                android:textColor="#F4C542"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="18dp" />
+
+            <TextView
+                android:id="@+id/tvGrossSalary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gross Salary: LKR 0.00"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/tvEmployeeEPF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Employee EPF (8%): LKR 0.00"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/tvAPIT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estimated APIT: LKR 0.00"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/tvNetSalary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Take-home Salary: LKR 0.00"
+                android:textColor="#F4C542"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#526078"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="EMPLOYER CONTRIBUTIONS (NOT DEDUCTED FROM YOUR SALARY)"
+                android:textColor="#F4C542"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="14dp" />
+
+            <TextView
+                android:id="@+id/tvEmployerEPF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Employer EPF (12%): LKR 0.00"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/tvETF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Employer ETF (3%): LKR 0.00"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Note: This is an estimate for a resident employee with one primary employment. Actual payroll tax may differ due to bonuses, benefits, other income and individual circumstances."
+            android:textColor="#AAB4C5"
+            android:textSize="12sp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B1220"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <!-- Header -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FinWise LK"
+            android:textColor="#F4C542"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FD Bank Comparison"
+            android:textColor="#FFFFFF"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:layout_marginTop="28dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Compare estimated fixed deposit returns side by side."
+            android:textColor="#AAB4C5"
+            android:textSize="14sp"
+            android:layout_marginTop="7dp" />
+
+        <!-- Deposit Amount -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deposit Amount (LKR)"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginTop="28dp" />
+
+        <EditText
+            android:id="@+id/etCompareAmount"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:hint="Enter deposit amount"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#8894A7"
+            android:backgroundTint="#F4C542" />
+
+        <!-- Deposit Period -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deposit Period (Months)"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/etCompareMonths"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:hint="Example: 12"
+            android:inputType="number"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#8894A7"
+            android:backgroundTint="#F4C542" />
+
+        <!-- Compare Button -->
+
+        <Button
+            android:id="@+id/btnCompareBanks"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="25dp"
+            android:text="Compare Bank Returns"
+            android:textColor="#0B1220"
+            android:textStyle="bold"
+            android:backgroundTint="#F4C542" />
+
+        <!-- Demo Notice -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DEMO DATA: Illustrative rates only. Not actual bank offers."
+            android:textColor="#F4C542"
+            android:textSize="12sp"
+            android:background="#18263B"
+            android:padding="12dp"
+            android:layout_marginTop="22dp" />
+
+        <!-- Results Heading -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Comparison Results"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Dynamic Bank Results -->
+
+        <LinearLayout
+            android:id="@+id/llBankResults"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter your deposit details and tap Compare Bank Returns."
+                android:textColor="#AAB4C5"
+                android:textSize="14sp"
+                android:padding="12dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calculations use simple interest estimates before applicable taxes and charges. Actual bank terms may differ."
+            android:textColor="#8894A7"
+            android:textSize="12sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>

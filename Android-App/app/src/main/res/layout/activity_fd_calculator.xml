@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B1220"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <!-- Header -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FinWise LK"
+            android:textColor="#F4C542"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fixed Deposit Calculator"
+            android:textColor="#FFFFFF"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate your estimated FD returns"
+            android:textColor="#AAB4C5"
+            android:textSize="14sp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="25dp" />
+
+        <!-- Deposit Amount -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deposit Amount (LKR)"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etDepositAmount"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#F4C542"
+            android:hint="Enter deposit amount"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#8894A7" />
+
+        <!-- Interest Rate -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Annual Interest Rate (%)"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="22dp" />
+
+        <EditText
+            android:id="@+id/etInterestRate"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#F4C542"
+            android:hint="Example: 8.5"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#8894A7" />
+
+        <!-- Period -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Deposit Period (Months)"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="22dp" />
+
+        <EditText
+            android:id="@+id/etPeriod"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#F4C542"
+            android:hint="Example: 12"
+            android:inputType="number"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#8894A7" />
+
+        <!-- Calculate Button -->
+
+        <Button
+            android:id="@+id/btnCalculateFD"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#F4C542"
+            android:text="Calculate Returns"
+            android:textColor="#0B1220"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Results Card -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#18263B"
+            android:padding="20dp"
+            android:layout_marginTop="28dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YOUR FD RESULTS"
+                android:textColor="#AAB4C5"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Interest Earned"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_marginTop="22dp" />
+
+            <TextView
+                android:id="@+id/tvInterestResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LKR 0.00"
+                android:textColor="#F4C542"
+                android:textSize="23sp"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#35445B"
+                android:layout_marginTop="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Final Maturity Amount"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_marginTop="18dp" />
+
+            <TextView
+                android:id="@+id/tvMaturityResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LKR 0.00"
+                android:textColor="#FFFFFF"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Note: Estimated using simple interest before applicable taxes and charges. Actual bank returns may differ."
+            android:textColor="#8894A7"
+            android:textSize="12sp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>

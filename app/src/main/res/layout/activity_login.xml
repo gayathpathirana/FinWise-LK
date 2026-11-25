@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B1220"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="28dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FinWise LK"
+            android:textColor="#F4C542"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome Back!"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login to manage your finances"
+            android:textColor="#AAB4C5"
+            android:textSize="15sp"
+            android:layout_marginBottom="35dp"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress"
+            android:padding="15dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAB4C5"
+            android:backgroundTint="#F4C542"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAB4C5"
+            android:backgroundTint="#F4C542"
+            android:layout_marginBottom="25dp"/>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="LOGIN"
+            android:textColor="#0B1220"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:backgroundTint="#F4C542"/>
+
+        <TextView
+            android:id="@+id/tvCreateAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account? Create Account"
+            android:textColor="#F4C542"
+            android:textSize="14sp"
+            android:padding="20dp"
+            android:layout_marginTop="15dp"/>
+
+    </LinearLayout>
+</ScrollView>

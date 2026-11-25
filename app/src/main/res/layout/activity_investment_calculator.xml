@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B1220"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Investment Return Calculator"
+            android:textColor="#F4C542"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estimate your future investment growth"
+            android:textColor="#AAB4C5"
+            android:textSize="14sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Initial Investment -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Initial Investment (LKR)"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etInitialInvestment"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:backgroundTint="#F4C542"
+            android:hint="Example: 100000"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAB4C5" />
+
+        <!-- Monthly Investment -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Monthly Investment (LKR)"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etMonthlyInvestment"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:backgroundTint="#F4C542"
+            android:hint="Example: 10000"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAB4C5" />
+
+        <!-- Annual Return Rate -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Expected Annual Return (%)"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etAnnualReturn"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:backgroundTint="#F4C542"
+            android:hint="Example: 10"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAB4C5" />
+
+        <!-- Investment Period -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Investment Period (Years)"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etInvestmentYears"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="22dp"
+            android:backgroundTint="#F4C542"
+            android:hint="Example: 5"
+            android:inputType="number"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAB4C5" />
+
+        <!-- Calculate Button -->
+        <Button
+            android:id="@+id/btnCalculateInvestment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F4C542"
+            android:text="Calculate Investment"
+            android:textColor="#0B1220"
+            android:textStyle="bold" />
+
+        <!-- Results Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#18263B"
+            android:padding="18dp"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="INVESTMENT RESULTS"
+                android:textColor="#F4C542"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="18dp" />
+
+            <TextView
+                android:id="@+id/tvTotalInvested"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Amount Invested: LKR 0.00"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:layout_marginBottom="14dp" />
+
+            <TextView
+                android:id="@+id/tvInvestmentProfit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Estimated Profit: LKR 0.00"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:layout_marginBottom="14dp" />
+
+            <TextView
+                android:id="@+id/tvFinalValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Final Investment Value: LKR 0.00"
+                android:textColor="#F4C542"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Note: This is an estimate, not a guaranteed return. Actual investment performance may vary due to market conditions, fees and taxes."
+            android:textColor="#AAB4C5"
+            android:textSize="12sp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>

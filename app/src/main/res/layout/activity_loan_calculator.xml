@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B1220"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="22dp">
+
+        <!-- Header -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="FinWise LK"
+            android:textColor="#F4C542"
+            android:textSize="27sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loan Calculator"
+            android:textColor="#FFFFFF"
+            android:textSize="23sp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calculate your monthly loan repayments."
+            android:textColor="#AAB4C5"
+            android:textSize="14sp"
+            android:layout_marginTop="7dp" />
+
+        <!-- Loan Amount -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loan Amount (LKR)"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="28dp" />
+
+        <EditText
+            android:id="@+id/etLoanAmount"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Example: 1000000"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#8894A7"
+            android:backgroundTint="#F4C542" />
+
+        <!-- Interest Rate -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Annual Interest Rate (%)"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/etLoanRate"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Example: 12"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#8894A7"
+            android:backgroundTint="#F4C542" />
+
+        <!-- Loan Period -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Loan Period (Years)"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp" />
+
+        <EditText
+            android:id="@+id/etLoanYears"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="Example: 5"
+            android:inputType="number"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#8894A7"
+            android:backgroundTint="#F4C542" />
+
+        <!-- Calculate Button -->
+
+        <Button
+            android:id="@+id/btnCalculateLoan"
+            android:layout_width="match_parent"
+            android:layout_height="58dp"
+            android:layout_marginTop="25dp"
+            android:text="Calculate Loan"
+            android:textColor="#0B1220"
+            android:textStyle="bold"
+            android:backgroundTint="#F4C542" />
+
+        <!-- Results Card -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#18263B"
+            android:padding="20dp"
+            android:layout_marginTop="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="YOUR LOAN RESULTS"
+                android:textColor="#AAB4C5"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Monthly Instalment"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:layout_marginTop="20dp" />
+
+            <TextView
+                android:id="@+id/tvMonthlyEMI"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LKR 0.00"
+                android:textColor="#F4C542"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#34445B"
+                android:layout_marginTop="18dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Interest"
+                android:textColor="#AAB4C5"
+                android:textSize="14sp"
+                android:layout_marginTop="18dp" />
+
+            <TextView
+                android:id="@+id/tvTotalInterest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LKR 0.00"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Repayment"
+                android:textColor="#AAB4C5"
+                android:textSize="14sp"
+                android:layout_marginTop="18dp" />
+
+            <TextView
+                android:id="@+id/tvTotalPayment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LKR 0.00"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="5dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Estimates use a reducing-balance EMI calculation. Actual bank repayments may vary."
+            android:textColor="#8894A7"
+            android:textSize="12sp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>

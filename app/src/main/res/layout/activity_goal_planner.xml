@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0B1220"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Financial Goal Planner"
+            android:textColor="#F4C542"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plan your savings and achieve your financial goals"
+            android:textColor="#AAB4C5"
+            android:textSize="14sp"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Goal Name -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Goal Name"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etGoalName"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:backgroundTint="#F4C542"
+            android:hint="Example: Buy a Laptop"
+            android:inputType="textCapSentences"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAB4C5" />
+
+        <!-- Target Amount -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Target Amount (LKR)"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etTargetAmount"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:backgroundTint="#F4C542"
+            android:hint="Example: 300000"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAB4C5" />
+
+        <!-- Current Savings -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Current Savings (LKR)"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etCurrentSavings"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="18dp"
+            android:backgroundTint="#F4C542"
+            android:hint="Example: 50000"
+            android:inputType="numberDecimal"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAB4C5" />
+
+        <!-- Target Period -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Target Period (Months)"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/etGoalMonths"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="22dp"
+            android:backgroundTint="#F4C542"
+            android:hint="Example: 12"
+            android:inputType="number"
+            android:padding="12dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#AAB4C5" />
+
+        <!-- Calculate Button -->
+        <Button
+            android:id="@+id/btnCalculateGoal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#F4C542"
+            android:text="Calculate Savings Plan"
+            android:textColor="#0B1220"
+            android:textStyle="bold" />
+
+        <!-- Results Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#18263B"
+            android:padding="18dp"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="YOUR SAVINGS PLAN"
+                android:textColor="#F4C542"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="18dp" />
+
+            <TextView
+                android:id="@+id/tvGoalResultName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Goal: Not set"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/tvRemainingAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Remaining Amount: LKR 0.00"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:layout_marginBottom="12dp" />
+
+            <TextView
+                android:id="@+id/tvMonthlySavings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Required Monthly Savings: LKR 0.00"
+                android:textColor="#F4C542"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp" />
+
+            <TextView
+                android:id="@+id/tvGoalProgress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Savings Progress: 0%"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:layout_marginBottom="10dp" />
+
+            <ProgressBar
+                android:id="@+id/pbGoalProgress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:max="100"
+                android:progress="0"
+                android:progressTint="#F4C542"
+                android:progressBackgroundTint="#526078" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Note: This plan assumes you save the same amount every month. It does not include interest, investment returns or inflation."
+            android:textColor="#AAB4C5"
+            android:textSize="12sp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>

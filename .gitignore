@@ -1,14 +1,46 @@
+
 # macOS
 .DS_Store
 **/.DS_Store
 
 # Android Studio
 .gradle/
+**/.gradle/
 build/
 **/build/
 local.properties
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Android generated files
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+output-metadata.json
+mapping.txt
+
+# Release build folders
+**/app/release/
+
+# Signing keys
 *.jks
 *.keystore
 
-# Secrets
+# Secrets and environment files
 .env
+.env.*
+!.env.example
+
+# IDE files
+.idea/
+*.iml
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.swp
