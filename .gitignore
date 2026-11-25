@@ -1,0 +1,14 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Android Studio
+.gradle/
+build/
+**/build/
+local.properties
+*.jks
+*.keystore
+
+# Secrets
+.env
